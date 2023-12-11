@@ -150,13 +150,5 @@ article h1 {
   text-align: left;
 }
 
-.scroll > .row {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
 
-.scroll > .row > .col {
-  padding: 10px;
-  
-}
+

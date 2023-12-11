@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import "../styles/Login.css";
+import { withRouter } from '../withRouter';
 
-export default class Login extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,6 +33,7 @@ export default class Login extends Component {
 }).then((res) => res.json())
 .then((data) => {
   console.log(data, "userRegister");
+  this.props.navigate('/');
 });
   }
   render() {
@@ -85,4 +87,5 @@ export default class Login extends Component {
       </form>
     )
   }
-}
+} 
+export default withRouter(Login);
