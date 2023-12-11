@@ -9,6 +9,7 @@ import {
     MDBRipple
   } from 'mdb-react-ui-kit';
   import "../styles/Services.css"
+  import Fuel from "../fuel.jpg"
   import withRouter from "../withRouter"
   
 
@@ -25,7 +26,7 @@ class Services extends Component {
             </h2>
             <MDBCard margin-top="200px">
             <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-              <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' width="1000px" height="800px" fluid alt='...' />
+              <MDBCardImage src={Fuel} width="1000px" height="800px" fluid alt='...' />
               <a>
                 <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
               </a>
