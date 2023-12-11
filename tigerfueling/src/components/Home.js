@@ -28,7 +28,6 @@ The duo's first major project aimed to streamline logistics and enhance efficien
         </article>
         </div>
         <div className="landingContent">
-        <p className="pLanding">What we do</p>
                         <div className="scroll">
                             <div className="row"> 
                             <div className="col">

@@ -39,7 +39,9 @@ fetch("http://localhost:5000/register", {
 
   render() {
     return (
+      <div className="body">
       <form onSubmit={this.handleSubmit}>
+        <div className = "container">
         <h3>Sign Up</h3>
 
         <div className="mb-3">
@@ -86,14 +88,18 @@ fetch("http://localhost:5000/register", {
         </div>
 
         <div className="d-grid">
+          <div className="mybutn">
           <button type="submit" className="btn btn-primary">
             Sign Up
           </button>
+          </div>
         </div>
         <p className="forgot-password text-right">
-          Already registered <a href="/sign-in">sign in?</a>
+          Already registered? <a href="/login">Sign in</a>
         </p>
+        </div>
       </form>
+      </div>
     )
   }
 }
