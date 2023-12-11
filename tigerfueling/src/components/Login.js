@@ -33,6 +33,8 @@ class Login extends Component {
 }).then((res) => res.json())
 .then((data) => {
   console.log(data, "userRegister");
+  //Adding logic to keep user logged in
+  //isLoggedIn = true;
   this.props.navigate('/');
 });
   }

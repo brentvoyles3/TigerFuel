@@ -15,7 +15,7 @@ const Home = () => {
              <div className="container">
         <article>
           <h1>What is Tiger Fueling? </h1>
-In the world of innovation and collaboration, the story of two ambitious individuals—one armed with a Computer Science degree from the University of Georgia (UGA) and the other pursuing an MBA at Clemson University—stands out.
+Chat GPT BS: In the world of innovation and collaboration, the story of two ambitious individuals—one armed with a Computer Science degree from the University of Georgia (UGA) and the other pursuing an MBA at Clemson University—stands out.
 This dynamic duo has combined their unique skill sets to make waves in the marine industry, showcasing the power of interdisciplinary collaboration.
 The Tech Whiz from UGA:
 Meet Brent, a UGA graduate with a passion for technology and a mind wired for problem-solving. Armed with a degree in Computer Science, Brent honed their skills in programming, data analysis, and artificial intelligence during their time at UGA. The foundation laid at UGA provided the technical expertise that would become crucial in the development of cutting-edge solutions for the marine industry.

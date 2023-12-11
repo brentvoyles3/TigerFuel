@@ -1,0 +1,19 @@
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.body {
+    align-items: center;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.MDB {
+   align-items: center; 
+   margin-top: 100px;
+   margin-left: 40px;
+   width: 450px;
+   height: 650px;
+}

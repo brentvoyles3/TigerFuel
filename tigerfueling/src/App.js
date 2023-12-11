@@ -12,6 +12,10 @@ import Login from "./components/Login"
 import Register from "./components/Register"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import Services from "./components/Services"
+import Fueling from "./components/Fueling"
+import BaitTackle from "./components/BaitTackle"
+import Towing from "./components/Towing"
 import React from 'react';
 
 function App() {
@@ -30,18 +34,38 @@ function App() {
                     />
 
                    <Route
-                      path="/Login"
+                      path="/login"
                       element={<Login />}
                   />
 
                    <Route
-                      path="/Register"
+                      path="/register"
                       element={<Register />}
                   />
 
+                    <Route  
+                      path="/services"
+                      element={<Services />}
+                  />
+
                   <Route
-                      path="/Contactus"
+                      path="/contactus"
                       element={<Contact />}
+                  />
+
+                    <Route  
+                      path="/fueling"
+                      element={<Fueling />}
+                  />
+
+<Route  
+                      path="/baittackle"
+                      element={<BaitTackle />}
+                  />
+
+<Route  
+                      path="/towing"
+                      element={<Towing />}
                   />
 
                   {/* If any route mismatches the upper 
