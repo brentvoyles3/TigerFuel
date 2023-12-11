@@ -19,7 +19,7 @@ class Services extends Component {
     }
     render() {
         return (
-            <div className="body">
+            <div className="servicesBody">
                    <h2>
                 Services (temp content)
             </h2>

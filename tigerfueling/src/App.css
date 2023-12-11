@@ -103,7 +103,7 @@ height: 100%;
   padding: 0;
 }
 
-.body {
+.landingBody {
   background-color: rgb(223, 211, 211);
   font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -112,11 +112,13 @@ height: 100%;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
+.landingContainer {
   max-width: 70%;
   margin-right: auto;
   margin-left: auto;
   padding: 1rem;
+  text-align:center;
+  margin-bottom: 25px;
 }
 
 .tigger {

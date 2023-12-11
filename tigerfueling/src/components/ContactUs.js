@@ -34,6 +34,7 @@ class ContactUs extends Component {
 }).then((res) => res.json())
 .then((data) => {
   console.log(data, "userMessage");
+  this.props.navigate('/');
 });
   }
 
@@ -51,13 +52,12 @@ render() {
             />
           </div>
           <div className="form-group">
-            <input className="form-control is-invalid" 
+            <input className="form-control" 
             type="email" 
             name="email" 
             placeholder="Email" 
             onChange={e => this.setState({email: e.target.value})}
             />
-            <small className="form-text text-danger">Please enter a correct email address.</small>
           </div>
           <div className="form-group">
             <textarea className="form-control" rows="14" name="message" placeholder="Message"

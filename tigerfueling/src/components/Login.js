@@ -35,6 +35,7 @@ class Login extends Component {
   console.log(data, "userRegister");
   //Adding logic to keep user logged in
   //isLoggedIn = true;
+  alert("Loggin in...");
   this.props.navigate('/');
 });
   }

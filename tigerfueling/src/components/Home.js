@@ -8,11 +8,11 @@ import tiger from "../tiger.jpeg"
  
 const Home = () => {
     return (
-        <div className="body">
+        <div className="landingBody">
             <div className="picContainer">
                 <img src={tiger} className = "tigger"></img>
             </div>
-             <div className="container">
+             <div className="landingContainer">
         <article>
           <h1>What is Tiger Fueling? </h1>
 Chat GPT BS: In the world of innovation and collaboration, the story of two ambitious individuals—one armed with a Computer Science degree from the University of Georgia (UGA) and the other pursuing an MBA at Clemson University—stands out.
@@ -24,17 +24,9 @@ Enter Rivers, an MBA student at Clemson University, equipped with a keen busines
 Forging a Partnership
 Their paths crossed at an industry networking event, where they discovered a shared vision for revolutionizing the marine sector. Recognizing the potential of combining technology with business acumen, Brent and Rivers decided to join forces. The collaboration between a UGA Computer Science graduate and a Clemson MBA student was born, breaking down traditional silos and embracing a holistic approach to problem-solving.
 Innovations in the Marine Industry:
-The duo's first major project aimed to streamline logistics and enhance efficiency in marine transportation. Leveraging Brent's programming skills, they developed a sophisticated algorithm that optimized shipping routes, reducing fuel consumption and minimizing environmental impact. Sarah's business acumen played a crucial role in securing partnerships with major players in the industry, turning their innovative solution into a market success.
+The duo's first major project aimed to streamline logistics and enhance efficiency in marine transportation. Leveraging Brent's programming skills, they developed a sophisticated algorithm that optimized shipping routes, reducing fuel consumption and minimizing environmental impact.
         </article>
-        </div>
-        <div className="landingContent">
-                        <div className="scroll">
-                            <div className="row"> 
-                            <div className="col">
-                            </div>
-                            </div>
-                            </div>
-        </div>
+        </div>        
         </div>
     );
 };

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import "../styles/Register.css"
+import { withRouter } from '../withRouter';
 
-export default class Register extends Component {
+class Register extends Component {
     constructor(props) {
         super (props);
         this.state={
@@ -34,6 +35,8 @@ fetch("http://localhost:5000/register", {
 }).then((res) => res.json())
 .then((data) => {
   console.log(data, "userRegister");
+  alert("Creating Account...");
+  this.props.navigate('/login');
 });
     }
 
@@ -103,3 +106,5 @@ fetch("http://localhost:5000/register", {
     )
   }
 }
+
+export default withRouter(Register);
