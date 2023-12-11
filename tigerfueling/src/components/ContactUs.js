@@ -34,12 +34,14 @@ class ContactUs extends Component {
 }).then((res) => res.json())
 .then((data) => {
   console.log(data, "userMessage");
+  alert("Message sent, we will reply as soon as possible");
   this.props.navigate('/');
 });
   }
 
 render() {
     return (
+      <div className="contactContainer"> 
       <div className="contact-clean">
         <form onSubmit={this.handleSubmit}>
           <h2 className="text-center">Contact us</h2>
@@ -68,6 +70,7 @@ render() {
             <button className="btn btn-primary" type="submit">Send</button>
           </div>
         </form>
+      </div>
       </div>
     );
   }

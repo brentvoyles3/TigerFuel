@@ -43,8 +43,8 @@ fetch("http://localhost:5000/register", {
   render() {
     return (
       <div className="body">
-      <form onSubmit={this.handleSubmit}>
         <div className = "container">
+      <form onSubmit={this.handleSubmit}>
         <h3>Sign Up</h3>
 
         <div className="mb-3">
@@ -100,8 +100,8 @@ fetch("http://localhost:5000/register", {
         <p className="forgot-password text-right">
           Already registered? <a href="/login">Sign in</a>
         </p>
-        </div>
       </form>
+      </div>
       </div>
     )
   }
