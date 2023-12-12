@@ -10,6 +10,8 @@ import {
   } from 'mdb-react-ui-kit';
   import "../styles/Services.css"
   import Fuel from "../fuel.jpg"
+  import Tackle from "../tackle.jpg"
+  import Tow from "../tow.jpg";
   import withRouter from "../withRouter"
   
 
@@ -22,7 +24,7 @@ class Services extends Component {
         return (
             <div className="servicesBody">
                    <h2>
-                Services - Temp Content
+                Products & Services
             </h2>
             <MDBCard margin-top="200px">
             <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
@@ -41,7 +43,7 @@ class Services extends Component {
           </MDBCard>
           <MDBCard>
             <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-              <MDBCardImage src='https://mdbcdn.b-cdn.net/img/new/slides/041.webp' width="1000px" height="800px" fluid alt='...' />
+              <MDBCardImage src={Tackle} width="1000px" height="800px" fluid alt='...' />
               <a>
                 <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
               </a>
@@ -56,7 +58,7 @@ class Services extends Component {
           </MDBCard>
           <MDBCard>
             <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-              <MDBCardImage src='https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp' width="1000px" height="800px" fluid alt='...' />
+              <MDBCardImage src={Tow} width="1000px" height="800px" fluid alt='...' />
               <a>
                 <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
               </a>

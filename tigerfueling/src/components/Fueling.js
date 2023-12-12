@@ -9,6 +9,7 @@ class Fueling extends Component {
     this.state = {
       name: "",
       email: "",
+      number: "",
       address: "",
       gallons: "",
       date: "",
@@ -19,9 +20,9 @@ class Fueling extends Component {
   
   handleSubmit(e){
     e.preventDefault();
-    const {name, email, address, gallons, date  } = this.state;
-    console.log("Name:", name, "Email:", email, "Address:", address, "Gallons:", gallons);
-    fetch("http://localhost:5000/contactus", {
+    const {name, email, number, address, gallons, date  } = this.state;
+    console.log("Name:", name, "Email:", email, "Address:",  address, "Number:", number, "Gallons:", gallons);
+    fetch("http://localhost:5000/quote", {
   method:"POST",
   crossDomain:true,
   headers:{
@@ -32,6 +33,7 @@ class Fueling extends Component {
   body:JSON.stringify ({
     name,
     email,
+    number,
     address,
     gallons,
     date,
@@ -40,6 +42,7 @@ class Fueling extends Component {
 .then((data) => {
   console.log(data, "userMessage");
   alert("Quote requested. One of our agents will reach out to you shortly.");
+  this.props.navigate('/login');
 });
   }
 
@@ -52,7 +55,7 @@ class Fueling extends Component {
       <div className="contactContainer"> 
       <div className="contact-clean">
         <form onSubmit={this.handleSubmit}>
-          <h2 className="text-center">Get Quoted Today</h2>
+          <h2 className="text-center">Get a Fuel Delivery Quote</h2>
           <div className="form-group">
             <input className="form-control" 
             type="text" 
@@ -67,6 +70,14 @@ class Fueling extends Component {
             name="email" 
             placeholder="Email" 
             onChange={e => this.setState({email: e.target.value})}
+            />
+          </div>
+          <div className="form-group">
+            <input className="form-control" 
+            type="tel" 
+            name="number" 
+            placeholder="Phone Number" 
+            onChange={e => this.setState({number: e.target.value})}
             />
           </div>
           <div className="form-group">
