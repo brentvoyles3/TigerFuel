@@ -13,10 +13,30 @@
   }
 }
 
+.towing {
+ background-color: #f1f7fc;
+ height:1903px ;
+ width: 1920px;
+ position: fixed;
+}
+
 .tiger {
 width:100%;
 length: 80%;
 z-index: 0;
+}
+
+.contact-clean form .form-control:focus {
+  border:1px solid #464040;
+}
+
+.contact-clean form .form-control {
+  border-radius:2px;
+  box-shadow:1px 1px 1px rgba(0,0,0,0.05);
+  outline:none;
+  color:inherit;
+  padding-left:12px;
+  height:42px;
 }
 
 .bg-image-vertical {
@@ -104,7 +124,7 @@ height: 100%;
 }
 
 .landingBody {
-  background-color: rgb(223, 211, 211);
+  background-color: #f1f7fc;
   font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

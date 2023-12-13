@@ -30,6 +30,7 @@
 
   .navigation-menu ul {
     display: flex;
+    margin-top: 15px;
     padding: 0;
   }
 

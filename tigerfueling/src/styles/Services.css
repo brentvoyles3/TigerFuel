@@ -1,13 +1,16 @@
 h2 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .servicesBody {
     align-items: center;
     text-align: center;
     margin-bottom:25px;
+    background-color: #f1f7fc;
+    height: 2800px;
+    position:absolute;
 }
 
 .MDB {

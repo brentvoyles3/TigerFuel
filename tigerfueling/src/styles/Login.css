@@ -9,7 +9,10 @@
   width: fit-content;
   text-align: center;
   align-items: center;
-  margin-left: 750px;
+    background-color: #f1f7fc;
+    height:1903px ;
+    width: 1920px;
+    position: fixed;
 }
 
 .container {
@@ -20,4 +23,8 @@
 .mb-3 {
     text-align: center;
     align-items: center;
+    }
+
+  .btn btn-primary{
+    width: auto;
     }

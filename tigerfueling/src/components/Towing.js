@@ -22,7 +22,7 @@ class Towing extends Component {
 
       render() {
         return (
-            <div>
+            <div className="towing">
             <h2>
                 Towing Services
             </h2>
@@ -81,7 +81,7 @@ class Towing extends Component {
           <div className="form-group">
             <button className="btn btn-primary" type="submit">Submit Towing Request</button>
           </div>
-          <p> For boat rescue emergencies please call us at 678-381-7844</p>
+          <p> For boat rescue emergencies call us at 678-381-7844</p>
         </form>
       </div>
       </div>

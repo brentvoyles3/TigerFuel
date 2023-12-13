@@ -10,7 +10,7 @@ class Fueling extends Component {
       name: "",
       email: "",
       number: "",
-      address: "",
+      zipcode: "",
       gallons: "",
       date: "",
     };
@@ -20,8 +20,8 @@ class Fueling extends Component {
   
   handleSubmit(e){
     e.preventDefault();
-    const {name, email, number, address, gallons, date  } = this.state;
-    console.log("Name:", name, "Email:", email, "Address:",  address, "Number:", number, "Gallons:", gallons);
+    const {name, email, number, zipcode, gallons, date  } = this.state;
+    console.log("Name:", name, "Email:", email, "Number:", number, "Zipcode", zipcode, "Gallons:", gallons);
     fetch("http://localhost:5000/quote", {
   method:"POST",
   crossDomain:true,
@@ -34,7 +34,7 @@ class Fueling extends Component {
     name,
     email,
     number,
-    address,
+    zipcode,
     gallons,
     date,
   }),
@@ -42,7 +42,7 @@ class Fueling extends Component {
 .then((data) => {
   console.log(data, "userMessage");
   alert("Quote requested. One of our agents will reach out to you shortly.");
-  this.props.navigate('/login');
+  this.props.navigate('/');
 });
   }
 
@@ -83,9 +83,9 @@ class Fueling extends Component {
           <div className="form-group">
             <input className="form-control" 
             type="text" 
-            name="address" 
-            placeholder="Address" 
-            onChange={e => this.setState({address: e.target.value})}
+            name="zipcode" 
+            placeholder="Zipcode" 
+            onChange={e => this.setState({zipcode: e.target.value})}
             />
           </div>
           <div className="form-group">

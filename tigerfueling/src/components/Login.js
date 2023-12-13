@@ -13,6 +13,38 @@ class Login extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  validate() {
+    let isValid = true;
+    let emailError = "";
+    let passwordError = "";
+
+   if (!this.state.email) {
+      emailError = "Email field is required.";
+  } else {
+    emailError = "";
+    this.setState({ emailError });
+  }
+
+  if (!this.state.password) {
+   passwordError = "Password field is required."; 
+  } else {
+    passwordError = "";
+    this.setState({ passwordError });
+  }
+
+  if (emailError) {
+      this.setState({ emailError });
+      isValid = false;
+  }
+
+  if (passwordError) {
+    this.setState({ passwordError });
+    isValid = false;
+  }
+
+  return isValid;
+}
+
   handleSubmit(e){
     e.preventDefault();
     const {email, password } = this.state;
@@ -79,9 +111,11 @@ class Login extends Component {
         </div>
 
         <div className="d-grid">
+        <div className="mybutn">
           <button type="submit" className="btn btn-primary">
-            Submit
+            Login
           </button>
+          </div>
         </div>
         <p className="forgot-password text-right">
           Forgot <a href="#">password?</a>

@@ -4,6 +4,7 @@ h2 {
 
 .contact-clean {
     background:#f1f7fc;
+    height:100%;
     padding:80px 0;
   }
   
@@ -17,7 +18,6 @@ h2 {
     max-width:480px;
     width:90%;
     margin:0 auto;
-    background-color:#ffffff;
     padding:40px;
     border-radius:4px;
     color:#505e6c;
@@ -25,7 +25,8 @@ h2 {
   }
 
   .contactContainer{
-    background-color: #ffffff;
+    background-color: #f1f7fc;
+    margin-top: 100px;
   }
   
   @media (max-width:767px) {
@@ -47,7 +48,6 @@ h2 {
   }
   
   .contact-clean form .form-control {
-    background:#fff;
     border-radius:2px;
     box-shadow:1px 1px 1px rgba(0,0,0,0.05);
     outline:none;

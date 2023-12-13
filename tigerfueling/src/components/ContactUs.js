@@ -41,6 +41,7 @@ class ContactUs extends Component {
 
 render() {
     return (
+      <div className="body">
       <div className="contactContainer"> 
       <div className="contact-clean">
         <form onSubmit={this.handleSubmit}>
@@ -70,6 +71,7 @@ render() {
             <button className="btn btn-primary" type="submit">Send</button>
           </div>
         </form>
+      </div>
       </div>
       </div>
     );
