@@ -48,7 +48,7 @@ class Fueling extends Component {
 
     render() {
         return (
-            <div>
+            <div className="body">
             <h2>
                 Fueling
             </h2>

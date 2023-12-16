@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.container input{
+text-align: center;
+}
+
 .mb-3 {
     text-align: center;
     align-items: center;
