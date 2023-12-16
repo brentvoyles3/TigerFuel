@@ -43,6 +43,9 @@ fetch("http://localhost:5000/register", {
   render() {
     return (
       <div className="body">
+           <h2>
+          Welcome New User!
+        </h2>
         <div className = "container">
       <form onSubmit={this.handleSubmit}>
         <h3>Sign Up</h3>

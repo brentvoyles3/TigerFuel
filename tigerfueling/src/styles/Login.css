@@ -16,16 +16,20 @@
 }
 
 .container {
-    margin-top: 250px;
+    margin-top: 200px;
     text-align: center;
 }
 
-.container input{
-text-align: center;
+h2 {
+  text-align: center;
+  font-style: bold;
+  font-weight:bold;
 }
+
 
 .mb-3 {
     text-align: center;
+    width: auto;
     align-items: center;
     }
 
