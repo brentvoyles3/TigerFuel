@@ -18,9 +18,6 @@ export default function Navbar() {
                 <a href="/register">Register</a>
               </li>
               <li>
-                <a href="/services">Services</a>
-              </li>
-              <li>
                 <a href="/contactus">Contact</a>
               </li>
             </ul>

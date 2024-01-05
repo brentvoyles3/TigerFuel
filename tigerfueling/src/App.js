@@ -30,7 +30,7 @@ function App() {
         we passes the imported component*/}
        <Route
                         exact path="/"
-                        element={<Home />}
+                        element={<Services/>}
                     />
 
                    <Route
