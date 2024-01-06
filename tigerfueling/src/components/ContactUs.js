@@ -42,10 +42,11 @@ class ContactUs extends Component {
 render() {
     return (
       <div className="body">
+        <h2>Contact The Team</h2>
       <div className="contactContainer"> 
       <div className="contact-clean">
         <form onSubmit={this.handleSubmit}>
-          <h2 className="text-center">Contact us</h2>
+          <h2 className="text-center">Send Us An Email</h2>
           <div className="form-group">
             <input className="form-control" 
             type="text" 

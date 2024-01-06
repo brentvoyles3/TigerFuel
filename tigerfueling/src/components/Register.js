@@ -46,67 +46,50 @@ fetch("http://localhost:5000/register", {
            <h2>
           Welcome New User!
         </h2>
-        <div className = "container">
-      <form onSubmit={this.handleSubmit}>
-        <h3>Sign Up</h3>
-
-        <div className="mb-3">
-          <label>First name</label>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="First name"
-            onChange={e => this.setState({fname:e.target.value})
-                }
-          />
-        </div>
-
-        <div className="mb-3">
-          <label>Last name</label>
-          <input type="text" 
-          className="form-control" 
-          placeholder="Last name" 
-          onChange={e => this.setState({lname:e.target.value})
-        } 
-          />
-        </div>
-
-        <div className="mb-3">
-          <label>Email address</label>
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter email"
-            onChange={e => this.setState({email:e.target.value})
-        }
-          />
-        </div>
-
-        <div className="mb-3">
-          <label>Password</label>
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Enter password"
-            onChange={e => this.setState({password:e.target.value})
-        }
-          />
-        </div>
-
-        <div className="d-grid">
-          <div className="mybutn">
-          <button type="submit" className="btn btn-primary">
-            Sign Up
-          </button>
+        <div className="contactContainer"> 
+      <div className="contact-clean">
+        <form onSubmit={this.handleSubmit}>
+          <h2 className="text-center">Create Account</h2>
+          <div className="form-group">
+            <input className="form-control" 
+            type="name" 
+            name="name" 
+            placeholder="First Name" 
+            onChange={e => this.setState({fname: e.target.value})}
+            />
           </div>
-        </div>
-        <p className="forgot-password text-right">
-          Already registered? <a href="/login">Sign in</a>
-        </p>
-      </form>
+          <div className="form-group">
+            <input className="form-control" 
+            type="name" 
+            name="name" 
+            placeholder="Last Name" 
+            onChange={e => this.setState({lname: e.target.value})}
+            />
+          </div>
+          <div className="form-group">
+            <input className="form-control" 
+            type="email" 
+            name="email" 
+            placeholder="Email Address" 
+            onChange={e => this.setState({email: e.target.value})}
+            />
+          </div>
+          <div className="form-group">
+            <input className="form-control" 
+            type="password" 
+            name="password" 
+            placeholder="Password" 
+            onChange={e => this.setState({password: e.target.value})}
+            />
+          </div>
+          <div className="form-group">
+            <button className="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
       </div>
       </div>
-    )
+      </div>
+    );
   }
 }
 
