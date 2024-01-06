@@ -5,13 +5,14 @@
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: rgb(245, 238, 238);
+    background-color: navy;
     color: black;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   }
 
   .navigation a{
-    color:purple;
+    color:aqua;
+    font-style: bold;
   }
 
   .navigation a:hover{

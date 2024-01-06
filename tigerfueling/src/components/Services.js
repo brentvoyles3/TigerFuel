@@ -24,7 +24,7 @@ class Services extends Component {
         return (
             <div className="servicesBody">
                    <h2>
-                Products & Services
+                Our Products & Services
             </h2>
             <MDBCard margin-top="200px">
             <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
