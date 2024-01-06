@@ -41,61 +41,37 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className = "body">
-        <h2>
-          Welcome Back!
-        </h2>
-      <form onSubmit={this.handleSubmit}>
-<div className = "container">
-<h3>Sign In</h3>
-        <div className="mb-3">
-          <label>Email address</label>
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter email"
+      <div className="body">
+        <h2> Welcome Back!</h2>
+      <div className="contactContainer"> 
+      <div className="contact-clean">
+        <form onSubmit={this.handleSubmit}>
+          <h2 className="text-center">Sign In</h2>
+          <div className="form-group">
+            <input className="form-control" 
+            type="email" 
+            name="email" 
+            placeholder="Email Address" 
             onChange={e => this.setState({email: e.target.value})}
-          />
-        </div>
-
-        <div className="mb-3">
-          <label>Password</label>
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Enter password"
-            onChange={e => this.setState({password: e.target.value})}
-          />
-        </div>
-
-        <div className="mb-3">
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
             />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
-            </label>
           </div>
-        </div>
-
-        <div className="d-grid">
-        <div className="mybutn">
-          <button type="submit" className="btn btn-primary">
-            Login
-          </button>
+          <div className="form-group">
+            <input className="form-control" 
+            type="password" 
+            name="password" 
+            placeholder="Password" 
+            onChange={e => this.setState({password: e.target.value})}
+            />
           </div>
-        </div>
-        <p className="forgot-password text-right">
-          Forgot <a href="#">password?</a>
-        </p>
-          
-</div>
-      </form>
+          <div className="form-group">
+            <button className="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
       </div>
-    )
+      </div>
+      </div>
+    );
   }
-} 
+}
+
 export default withRouter(Login);
