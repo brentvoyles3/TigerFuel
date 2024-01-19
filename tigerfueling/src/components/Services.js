@@ -23,9 +23,6 @@ class Services extends Component {
     render() {
         return (
             <div className="servicesBody">
-                   <h2>
-                Our Products & Services
-            </h2>
             <MDBCard margin-top="200px">
             <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
               <MDBCardImage src={Fuel} width="1000px" height="800px" fluid alt='...' />

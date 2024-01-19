@@ -41,38 +41,29 @@ class ContactUs extends Component {
 
 render() {
     return (
-      <div className="body">
-        <h2>Contact The Team</h2>
-      <div className="contactContainer"> 
-      <div className="contact-clean">
+      <div className="d-flex justify-content-center align-items-center vh-100 contactPage">
+            <div className='p-3 rounded w-25 border contactForm'>
         <form onSubmit={this.handleSubmit}>
-          <h2 className="text-center">Send Us An Email</h2>
-          <div className="form-group">
-            <input className="form-control" 
+          <h2 className="text-center">Contact Us</h2>
+            <input className="form-control rounded-0" 
             type="text" 
             name="name" 
             placeholder="Name" 
             onChange={e => this.setState({name: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+            <input className="form-control rounded-0" 
             type="email" 
             name="email" 
             placeholder="Email" 
             onChange={e => this.setState({email: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <textarea className="form-control" rows="14" name="message" placeholder="Message"
+          <div className="form-group rounded-0">
+            <textarea className="form-control" rows="6" name="message" placeholder="Message"
             onChange={e => this.setState({message: e.target.value})}>
             </textarea>
           </div>
-          <div className="form-group">
-            <button className="btn btn-primary" type="submit">Send</button>
-          </div>
+          <button className="btn btn-primary w-100 rounded-0 type=submit">Submit</button>
         </form>
-      </div>
       </div>
       </div>
     );

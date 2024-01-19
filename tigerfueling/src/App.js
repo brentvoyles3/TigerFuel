@@ -77,7 +77,7 @@ function App() {
                       element={<Navigate to="/" />}
                   />
               </Routes>
-              <Footer />
+              {/*<Footer />*/}
           </Router>
       </>
   );

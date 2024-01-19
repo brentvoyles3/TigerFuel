@@ -1,3 +1,20 @@
+.contactPage{
+  background: url('../components/Dock.jpg');
+  background: linear-gradient(regba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+}
+
+.contactForm{
+  background-color: rgba(1, 32, 93, 0.6);
+  color: white;
+}
+
+.contactForm button{
+ margin-top: 15px;
+}
+
 h2 {
     text-align: center;
     font-style: bold;

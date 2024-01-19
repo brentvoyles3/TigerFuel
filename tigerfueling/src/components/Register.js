@@ -42,51 +42,36 @@ fetch("http://localhost:5000/register", {
 
   render() {
     return (
-      <div className="body">
-           <h2>
-          Welcome New User!
-        </h2>
-        <div className="contactContainer"> 
-      <div className="contact-clean">
+      <div className='d-flex justify-content-center align-items-center vh-100 registerPage'>
+      <div className='p-3 rounded w-25 border registerForm'>
         <form onSubmit={this.handleSubmit}>
           <h2 className="text-center">Create Account</h2>
-          <div className="form-group">
-            <input className="form-control" 
+            <input className="form-control rounded-0" 
             type="name" 
             name="name" 
             placeholder="First Name" 
             onChange={e => this.setState({fname: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+            <input className="form-control rounded-0" 
             type="name" 
             name="name" 
             placeholder="Last Name" 
             onChange={e => this.setState({lname: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+            <input className="form-control rounded-0" 
             type="email" 
             name="email" 
             placeholder="Email Address" 
             onChange={e => this.setState({email: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+            <input className="form-control rounded-0" 
             type="password" 
             name="password" 
             placeholder="Password" 
             onChange={e => this.setState({password: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <button className="btn btn-primary" type="submit">Submit</button>
-          </div>
+              <button className="btn btn-primary w-100 rounded-0 type=submit">Submit</button>
         </form>
-      </div>
       </div>
       </div>
     );
