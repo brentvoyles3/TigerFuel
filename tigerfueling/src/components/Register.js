@@ -45,7 +45,7 @@ fetch("http://localhost:5000/register", {
       <div className='d-flex justify-content-center align-items-center vh-100 registerPage'>
       <div className='p-3 rounded w-25 border registerForm'>
         <form onSubmit={this.handleSubmit}>
-          <h2 className="text-center">Create Account</h2>
+          <h2 className="text-center">User Registration</h2>
             <input className="form-control rounded-0" 
             type="name" 
             name="name" 
@@ -70,7 +70,9 @@ fetch("http://localhost:5000/register", {
             placeholder="Password" 
             onChange={e => this.setState({password: e.target.value})}
             />
-              <button className="btn btn-primary w-100 rounded-0 type=submit">Submit</button>
+                 <div className="buttonHolder">
+          <button className="myButton" type="submit">Create Account</button>
+          </div>
         </form>
       </div>
       </div>

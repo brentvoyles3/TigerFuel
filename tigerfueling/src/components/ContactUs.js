@@ -34,7 +34,7 @@ class ContactUs extends Component {
 }).then((res) => res.json())
 .then((data) => {
   console.log(data, "userMessage");
-  alert("Message sent, we will reply as soon as possible");
+  alert("Message received! We will reply as soon as possible.");
   this.props.navigate('/');
 });
   }
@@ -54,15 +54,17 @@ render() {
             <input className="form-control rounded-0" 
             type="email" 
             name="email" 
-            placeholder="Email" 
+            placeholder="Email Address" 
             onChange={e => this.setState({email: e.target.value})}
             />
           <div className="form-group rounded-0">
-            <textarea className="form-control" rows="6" name="message" placeholder="Message"
+            <textarea className="form-control" rows="6" name="message" placeholder="Message To Us..."
             onChange={e => this.setState({message: e.target.value})}>
             </textarea>
           </div>
-          <button className="btn btn-primary w-100 rounded-0 type=submit">Submit</button>
+          <div className="buttonHolder">
+          <button className="myButton" type="submit">Send Message</button>
+          </div>
         </form>
       </div>
       </div>

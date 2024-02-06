@@ -15,7 +15,6 @@ const Home = () => {
              <div className="landingContainer">
         <article>
           <h1> About Us </h1>
-          Dock and Boat owner Brent and Rivers, frustrated with high prices at marine gas stations, manual fueling, and bait runs, join forces to revolutionize the marine industry.  Their collaboration yields innovative solutions like an algorithm optimizing shipping routes for efficiency and environmental sustainability, addressing the challenges they faced personally. Explore our services designed to make your weekend on the water much more pleasant.
           </article>
         </div>        
         </div>

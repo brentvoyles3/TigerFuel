@@ -1,25 +1,28 @@
 
 .loginPage {
-  background: url('../components/HR.jpg');
+  background: url('../images/Dock.jpg');
   background: linear-gradient(regba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5));
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 120%;
 }
 
-.loginPage h1 {
-  color: white;
-  position: absolute;
-  top: 25px;
-  width: 300px;
-  padding: 10px;
-}
-
 .loginForm {
-  background-color: rgba(1, 32, 93, 0.6);
+  background-color: rgba(21, 24, 22, 0.6);
   color: white;
 }
 
-.loginForm button{
-  margin-top: 25px;
-    }
+.myButton{
+  margin-top:15px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  background-color: #fcf8e3;
+  font-size: 1em;
+  cursor: pointer;
+  }
+
+.buttonHolder{
+  text-align: center;
+}

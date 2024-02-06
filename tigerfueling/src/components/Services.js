@@ -35,7 +35,7 @@ class Services extends Component {
               <MDBCardText>
               Fueling boat service is a vital aspect of ensuring smooth sailing adventures. Boaters rely on efficient and reliable fueling services to power their aquatic journeys. Whether it's a marina with dedicated fuel docks or a mobile fueling service that comes to you, convenience and accessibility are key. Skilled professionals handle the transfer of fuel, emphasizing safety protocols and environmental considerations. From gasoline to diesel, these services cater to a variety of watercraft, ensuring that boats are adequately fueled for their voyages. Timely and dependable fueling options contribute to the overall enjoyment of the boating experience, allowing enthusiasts to focus on the open water ahead.
               </MDBCardText>
-              <MDBBtn className='me-1' color='info' href='/fueling'>Learn More</MDBBtn>
+              <button className="myButton" href='/fueling' type="submit">Learn More</button>
             </MDBCardBody>
           </MDBCard>
           <MDBCard>
@@ -63,7 +63,7 @@ class Services extends Component {
             <MDBCardBody>
               <MDBCardTitle>Towing / Rescue</MDBCardTitle>
               <MDBCardText width="400px">
-              Boat towing and rescue services are the unsung heroes of the maritime world, providing a safety net for boaters navigating unforeseen challenges on the water. Whether faced with engine trouble, mechanical failures, or unexpected weather conditions, these services step in to tow distressed vessels back to safety. Equipped with skilled professionals and specialized towing vessels, they ensure a prompt and secure response to maritime emergencies. Boaters can sail with peace of mind, knowing that assistance is just a call away. Beyond towing, these services often extend their support to rescue operations, aiding stranded boaters and salvaging vessels in distress. In the vast expanse of open water, boat towing and rescue services serve as a reliable lifeline, reinforcing the spirit of camaraderie among seafaring communities.
+              Boat towing and rescue services are the unsung heroes of the maritime world, providing a safety net for boaters navigating unforeseen challenges on the water. Whether faced with engine trouble, mechanical failures, or unexpected weather conditions, these services step in to tow distressed vessels back to safety. Equipped with skilled professionals and specialized towing vessels, they ensure a prompt and secure response to maritime emergencies. Boaters can sail with peace of mind, knowing that assistance is just a call away. Beyond towing, these services often extend their support to rescue operations, aiding stranded boaters and salvaging vessels in distress. In the vast expanse of open water, Sand Piper boat towing and rescue services serve as a reliable lifeline.
               </MDBCardText>
               <MDBBtn className='me-1' color='info' href='/towing'>Learn More</MDBBtn>
             </MDBCardBody>

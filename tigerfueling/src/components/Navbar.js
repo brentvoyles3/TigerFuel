@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <nav className="navigation">
           <a href="/" className="brand-name">
-            Tiger Fueling
+            Sand Piper Fueling
           </a>
           <div
             className="navigation-menu">
@@ -18,7 +18,10 @@ export default function Navbar() {
                 <a href="/register">Register</a>
               </li>
               <li>
-                <a href="/contactus">Contact</a>
+                <a href="/contactus">Contact Us</a>
+              </li>
+              <li>
+              <a href="/contactus">Cart</a>
               </li>
             </ul>
           </div>
