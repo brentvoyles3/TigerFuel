@@ -99,7 +99,7 @@ class Login extends Component {
             />
           <span className="text-danger">{this.state.passwordError}</span>    
           <div className="buttonHolder">
-          <button className="myButton" type="submit">Submit</button>
+          <button className="myButton" type="submit">Login</button>
           </div>
         </form>
       </div>

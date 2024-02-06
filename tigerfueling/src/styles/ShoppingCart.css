@@ -1,0 +1,19 @@
+.cartPage {
+    background: url('../images/Dock.jpg');
+    background: linear-gradient(regba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+  }
+
+  .gradient-custom {
+    /* Default */
+    background: #37343a;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(196, 191, 202), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(37, 19, 10), rgb(114, 99, 92))
+    }
+  

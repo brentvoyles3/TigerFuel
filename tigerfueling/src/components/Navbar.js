@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <nav className="navigation">
           <a href="/" className="brand-name">
-            Sand Piper Fueling
+          Hartwell Marina Supply Co.
           </a>
           <div
             className="navigation-menu">
@@ -21,7 +21,7 @@ export default function Navbar() {
                 <a href="/contactus">Contact Us</a>
               </li>
               <li>
-              <a href="/contactus">Cart</a>
+              <a href="/shoppingcart">Cart</a>
               </li>
             </ul>
           </div>

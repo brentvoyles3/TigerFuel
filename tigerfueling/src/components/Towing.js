@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import withRouter from "../withRouter"
+import "../styles/Towing.css"
 
 class Towing extends Component {
     constructor(props) {
@@ -22,14 +23,10 @@ class Towing extends Component {
 
       render() {
         return (
-            <div className="towing">
-            <h2>
-                Towing Services
-            </h2>
-      <div className="contactContainer"> 
-      <div className="contact-clean">
+          <div className='d-flex justify-content-center align-items-center vh-100 towingPage'>
+    <div className='p-3 rounded w-25 border towingForm'>
         <form onSubmit={this.handleSubmit}>
-          <h2 className="text-center">Towing / Rescue</h2>
+          <h2 className="text-center">Towing & Rescue</h2>
           <div className="form-group">
             <input className="form-control" 
             type="text" 
@@ -78,14 +75,15 @@ class Towing extends Component {
             onChange={e => this.setState({date: e.target.value})}
             />
           </div>
-          <div className="form-group">
-            <button className="btn btn-primary" type="submit">Submit Towing Request</button>
+          <div className="buttonHolder">
+            <button className="myButton" onClick={this.handleSubmit}>Submit Towing Request</button>
           </div>
-          <p> For boat rescue emergencies call us at 678-381-7844</p>
+          <div className="strongHolder">
+          <strong> For Boating Accidents And Emergencies Call 911!</strong>
+          </div>
         </form>
       </div>
-      </div>
-            </div>
+    </div>
         )};
 }
 export default Towing; 

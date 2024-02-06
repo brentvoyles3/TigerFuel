@@ -16,6 +16,7 @@ import Services from "./components/Services"
 import Fueling from "./components/Fueling"
 import BaitTackle from "./components/BaitTackle"
 import Towing from "./components/Towing"
+import ShoppingCart from "./components/ShoppingCart"
 import React from 'react';
 
 function App() {
@@ -67,6 +68,10 @@ function App() {
                       path="/towing"
                       element={<Towing />}
                   />
+<Route  
+                      path="/shoppingcart"
+                      element={<ShoppingCart />}
+                  />                  
 
                   {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 
