@@ -1,0 +1,12 @@
+.landingPage {
+    background: url('../images/team.jpg');
+    background: linear-gradient(regba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+  }
+
+  .landingForm {
+    background-color: rgba(21, 24, 22, 0.6);
+    color: white;
+  }

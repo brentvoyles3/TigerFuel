@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../styles/ContactUs.css";
+import "../styles/Fueling.css";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { withRouter } from '../withRouter';
 
@@ -48,69 +48,58 @@ class Fueling extends Component {
 
     render() {
         return (
-            <div className="body">
-            <h2>
-                Fueling
-            </h2>
-      <div className="contactContainer"> 
-      <div className="contact-clean">
+          <div className="d-flex justify-content-center align-items-center vh-100 fuelPage">
+          <div className='p-3 rounded w-25 border fuelForm'>
         <form onSubmit={this.handleSubmit}>
-          <h2 className="text-center">Get a Fuel Delivery Quote</h2>
-          <div className="form-group">
-            <input className="form-control" 
+          <h2 className="text-center">Get A Fuel Delivery Quote</h2>
+            <input className="form-control rounded-0" 
             type="text" 
             name="name" 
             placeholder="Name" 
             onChange={e => this.setState({name: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+
+          <input className="form-control rounded-0" 
             type="email" 
             name="email" 
             placeholder="Email" 
             onChange={e => this.setState({email: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+
+
+            <input className="form-control rounded-0" 
             type="tel" 
             name="number" 
             placeholder="Phone Number" 
             onChange={e => this.setState({number: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+
+            <input className="form-control rounded-0" 
             type="text" 
             name="zipcode" 
             placeholder="Zipcode" 
             onChange={e => this.setState({zipcode: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+
+            <input className="form-control rounded-0" 
             type="number" 
             name="gallons" 
             placeholder="Approximate # Of Gallons" 
             onChange={e => this.setState({gallons: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <input className="form-control" 
+
+            <input className="form-control rounded-0" 
             type="date" 
             name="date" 
             placeholder="Delivery Date" 
             onChange={e => this.setState({date: e.target.value})}
             />
-          </div>
-          <div className="form-group">
-            <button className="btn btn-primary" type="submit">Get Quote!</button>
+          <div className="buttonHolder">
+          <button className="myButton" type="submit">Submit</button>
           </div>
         </form>
       </div>
       </div>
-            </div>
         )};
 }
 export default withRouter(Fueling); 

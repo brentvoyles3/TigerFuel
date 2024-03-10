@@ -21,6 +21,9 @@ export default function Navbar() {
                 <a href="/contactus">Contact Us</a>
               </li>
               <li>
+              <a href="BaitTackle">Store</a>
+              </li>
+              <li>
               <a href="/shoppingcart">Cart</a>
               </li>
             </ul>

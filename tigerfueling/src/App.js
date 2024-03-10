@@ -6,7 +6,6 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Home from "./components/Home";
 import Contact from "./components/ContactUs"
 import Login from "./components/Login"
 import Register from "./components/Register"
@@ -17,6 +16,7 @@ import Fueling from "./components/Fueling"
 import BaitTackle from "./components/BaitTackle"
 import Towing from "./components/Towing"
 import ShoppingCart from "./components/ShoppingCart"
+import LandingPage from "./components/LandingPage"
 import React from 'react';
 
 function App() {
@@ -31,8 +31,13 @@ function App() {
         we passes the imported component*/}
        <Route
                         exact path="/"
-                        element={<Services/>}
+                        element={<LandingPage/>}
                     />
+
+                    <Route  
+                      path="/landingpage"
+                      element={<LandingPage />}
+                  />   
 
                    <Route
                       path="/login"

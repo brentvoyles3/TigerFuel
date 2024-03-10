@@ -65,7 +65,7 @@ class Services extends Component {
               </a>
             </MDBRipple>
             <MDBCardBody>
-              <MDBCardTitle>Bait and Tackle</MDBCardTitle>
+              <MDBCardTitle>Bait, Tackle, and Clothing</MDBCardTitle>
               <MDBCardText>
               Bait and fishing equipment delivery brings the tackle shop experience right to the angler's doorstep. This convenient service ensures that fishing enthusiasts have access to a wide array of fresh bait, lures, lines, and other essential gear without leaving the comfort of their homes. From live bait to specialized lures tailored for different species, the delivery service caters to the diverse needs of anglers. Whether it's a spontaneous fishing trip or a well-planned excursion, having the right gear delivered promptly adds an extra layer of convenience to the angling experience. Anglers can focus on perfecting their casts and enjoying the thrill of the catch, knowing that their bait and equipment needs are just a delivery away.
               </MDBCardText>
@@ -80,9 +80,9 @@ class Services extends Component {
               </a>
             </MDBRipple>
             <MDBCardBody>
-              <MDBCardTitle>Boat Towing and Rescue</MDBCardTitle>
+              <MDBCardTitle>Boat Towing</MDBCardTitle>
               <MDBCardText width="400px">
-              Boat towing and rescue services are the unsung heroes of the maritime world, providing a safety net for boaters navigating unforeseen challenges on the water. Whether faced with engine trouble, mechanical failures, or unexpected weather conditions, these services step in to tow distressed vessels back to safety. Equipped with skilled professionals and specialized towing vessels, they ensure a prompt and secure response to maritime emergencies. Boaters can sail with peace of mind, knowing that assistance is just a call away. Beyond towing, these services often extend their support to rescue operations, aiding stranded boaters and salvaging vessels in distress. In the vast expanse of open water, Sand Piper boat towing and rescue services serve as a reliable lifeline.
+              Boat towing and boat rescue services are the unsung heroes of the maritime world, providing a safety net for boaters navigating unforeseen challenges on the water. Whether faced with engine trouble, mechanical failures, or unexpected weather conditions, these services step in to tow distressed vessels back to safety. Equipped with skilled professionals and specialized towing vessels, they ensure a prompt and secure response to maritime emergencies. Boaters can sail with peace of mind, knowing that assistance is just a call away. Beyond towing, these services often extend their support to rescue operations, aiding stranded boaters and salvaging vessels in distress. In the vast expanse of open water, Sand Piper boat towing and rescue services serve as a reliable lifeline.
               </MDBCardText>
               <button className="myButton" onClick={this.handleSubmitTow}>Learn More</button>
             </MDBCardBody>
